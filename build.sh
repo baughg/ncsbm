@@ -1,0 +1,1 @@
+g++ myriad_usb.cpp file_util.cpp -o musb -lusb-1.0 -lm -lpthread -lrt -std=c++11
