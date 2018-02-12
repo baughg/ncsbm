@@ -324,9 +324,9 @@ int get_myriad_status(myriadStatus_t* myriad_state)
   memset(&header, 0, sizeof(header));
   header.cmd = USB_LINK_GET_MYRIAD_STATUS;
 
-  if (usb_write(mUsbHandle, (unsigned char*)&header, sizeof(header))) { 
-  printf("fail\n");   
+  if (usb_write(mUsbHandle, (unsigned char*)&header, sizeof(header))) {     
     return -1;
   }
+  
   return usb_read(mUsbHandle, (unsigned char*)myriad_state, sizeof(*myriad_state));
 }
