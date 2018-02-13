@@ -238,8 +238,7 @@ int usb_write(libusb_device_handle *f, unsigned char *p_data, size_t size)
     p_data = (unsigned char *) p_data + bt;
     size -= bt;
   }
-
-  printf("usb_write success!\n");
+  
   return 0;
 }
 
@@ -255,8 +254,7 @@ int usb_read(libusb_device_handle *f, unsigned char *p_data, size_t size)
     p_data = (unsigned char *) p_data + bt;
     size -= bt;
   }
-
-  printf("usb_read success!\n");
+  
   return 0;
 }
 
